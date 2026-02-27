@@ -103,6 +103,14 @@ You will submit:
 
 Please submit this assignment by pushing your work to your GitHub repository. Ensure that all code runs correctly and documentation builds successfully.
 
+**Note**: Make sure to commit your changes regularly throughout the activity using:
+
+```bash
+git add .
+git commit -m "Descriptive message about your changes"
+git push
+```
+
 ## GatorGrade
 
 This assignment will be evaluated using GatorGrade. You can check your progress using:
