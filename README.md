@@ -1,6 +1,6 @@
 # CS101 Python Documentation
 
-Activity 06: Introduction to Sphinx Documentation
+Activity 06: Introduction to Sphinx Documentation Library
 
 ## Assigned and Due
 
