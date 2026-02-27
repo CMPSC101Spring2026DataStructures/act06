@@ -1,0 +1,104 @@
+# GatorGrade Configuration for Activity 06: Sphinx Documentation
+# This file specifies checks that verify completion of the activity
+# Simon says do not edit. - OBC
+
+# --> check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Ensure that reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the writing/reflection.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the writing/reflection file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+# --> check the Tutorial 1 code for various characteristics
+- sphinx_intro/main.py:
+  - description: Ensure that sphinx_intro/main.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in sphinx_intro/main.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in sphinx_intro/main.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+# --> check the Tutorial 2 code for various characteristics
+- sphinx_modules/main.py:
+  - description: Ensure that sphinx_modules/main.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in sphinx_modules/main.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in sphinx_modules/main.py
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+- sphinx_modules/data_processing.py:
+  - description: Ensure that sphinx_modules/data_processing.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs in sphinx_modules/data_processing.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+
+- sphinx_modules/analysis.py:
+  - description: Ensure that sphinx_modules/analysis.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs in sphinx_modules/analysis.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+
+- sphinx_advanced/core.py:
+  - description: Ensure that sphinx_advanced/core.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs in sphinx_advanced/core.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+
+- sphinx_advanced/utilities.py:
+  - description: Ensure that sphinx_advanced/utilities.py file exists
+    check: ConfirmFileExists
+  - description: Complete all TODOs in sphinx_advanced/utilities.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+
+- sphinx_advanced/config.py:
+  - description: Ensure that sphinx_advanced/config.py file exists
+    check: ConfirmFileExists
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum number of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
